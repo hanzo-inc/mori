@@ -1,0 +1,12 @@
+# hanzo-inc/mori — read by the hanzoai/ci reusable (.hanzo/workflows/cicd.yml)
+# and by platform.hanzo.ai.
+#
+# Mori is Hanzo's 3D asset, mesh & world generation SKU (`mori`, `mori-1`),
+# served by hanzo-inc/zen and declared in hanzo/universe charts/app/files/zen/catalog.yaml.
+test:
+  - name: validate
+    run: |
+      set -e
+      test -s README.md
+      test -s LLM.md
+      bash -n examples/generate.sh
