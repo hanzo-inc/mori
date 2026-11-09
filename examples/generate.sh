@@ -10,7 +10,7 @@ prompt=${1:?usage: generate.sh <prompt>}
 body=$(printf '{"model":"mori","prompt":%s}' \
   "$(printf '%s' "$prompt" | python3 -c 'import json,sys; print(json.dumps(sys.stdin.read()))')")
 
-curl -sS https://api.hanzo.ai/v1/videos/generations \
+curl -sS https://api.hanzo.ai/v1/3d/generations \
   -H "Authorization: Bearer $HANZO_API_KEY" \
   -H "Content-Type: application/json" \
   -d "$body"

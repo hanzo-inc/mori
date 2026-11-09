@@ -5,7 +5,7 @@
 Mori (`mori`, `mori-1`) is Hanzo's 3D asset, mesh, and spatial scene generation model, served from Hanzo's inference fabric at `api.hanzo.ai` under the canonical id **`mori`** (open foundation: **`zen-3d`** / [`zenlm/zen-3d`](https://github.com/zenlm/zen-3d)). It generates production-ready manifold meshes, full PBR material stacks, and spatially consistent 3D environments.
 
 ```bash
-curl https://api.hanzo.ai/v1/videos/generations \
+curl https://api.hanzo.ai/v1/3d/generations \
   -H "Authorization: Bearer $HANZO_API_KEY" \
   -H "Content-Type: application/json" \
   -d '{"model":"mori","prompt":"weathered bronze astrolabe with engraved celestial rings, PBR textures"}'
@@ -15,7 +15,7 @@ curl https://api.hanzo.ai/v1/videos/generations \
 
 | | |
 |---|---|
-| Modes | text → 3D, image → 3D (`/v1/videos/generations` / `/v1/3d/generations`) |
+| Modes | text → 3D, image → 3D (`/v1/3d/generations`) |
 | Model IDs | `mori`, `mori-1` (open foundation: `zen-3d`) |
 | Exports | GLB / glTF, USDZ, FBX, OBJ, 3D Gaussian splats |
 
