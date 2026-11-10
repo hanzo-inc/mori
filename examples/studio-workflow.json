@@ -1,0 +1,14 @@
+{
+  "name": "Mori (\u68ee) Studio Workflow",
+  "description": "Hanzo Creative AI 3D Asset & Mesh Model (`mori` / `/v1/3d/generations`)",
+  "steps": [
+    {
+      "id": "mori-step-1",
+      "kind": "model.generate",
+      "model": "mori",
+      "input": {
+        "prompt": "Weathered bronze astrolabe with engraved celestial rings, PBR textures"
+      }
+    }
+  ]
+}
