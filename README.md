@@ -2,6 +2,8 @@
 
 # Mori
 
+[![Open in Hanzo](https://hanzo.app/badges/open-in-hanzo.svg)](https://hanzo.app/dev/open?repo=github.com/hanzo-inc/mori&ref=main&action=open) [![Edit with Hanzo](https://hanzo.app/badges/edit-with-hanzo.svg)](https://hanzo.app/dev/open?repo=github.com/hanzo-inc/mori&ref=main&action=edit) [![Deploy with Hanzo](https://hanzo.app/badges/deploy-with-hanzo.svg)](https://hanzo.app/dev/open?repo=github.com/hanzo-inc/mori&ref=main&action=deploy)
+
 Mori (`mori`, `mori-1`) is Hanzo's 3D asset, mesh, and spatial scene generation model, served from Hanzo's inference fabric at `api.hanzo.ai` under the canonical id **`mori`** (open foundation: **`zen-3d`** / [`zenlm/zen-3d`](https://github.com/zenlm/zen-3d)). It generates production-ready manifold meshes, full PBR material stacks, and spatially consistent 3D environments.
 
 ```bash
